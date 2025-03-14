@@ -1,0 +1,305 @@
+/* Custom Navbar Styles */
+
+.custom-navbar {
+  background-color: #2c3e50; /* Dark blue background */
+  padding: 10px 0;
+}
+
+.custom-navbar .navbar-brand {
+  color: #ecf0f1; /* Light gray text */
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.custom-navbar .navbar-brand img {
+  margin-right: 10px;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  color: #ecf0f1; /* Light gray text */
+  font-size: 18px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: #3498db; /* Blue text on hover */
+}
+
+.custom-navbar .navbar-nav .nav-link.active {
+  color: #3498db; /* Blue text for active link */
+  font-weight: bold;
+}
+
+.custom-navbar .navbar-toggler {
+  border-color: #ecf0f1; /* Light gray border for toggler */
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23ecf0f1' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.custom-navbar .dropdown-menu {
+  background-color: #2c3e50; /* Dark blue background for dropdown */
+  border: none;
+}
+
+.custom-navbar .dropdown-item {
+  color: #ecf0f1; /* Light gray text for dropdown items */
+  font-size: 16px;
+}
+
+.custom-navbar .dropdown-item:hover {
+  background-color: #34495e; /* Slightly lighter blue on hover */
+  color: #3498db; /* Blue text on hover */
+}
+
+.custom-navbar .dropdown-divider {
+  border-top: 1px solid #34495e; /* Divider color */
+}
+/* Custom Slider Styles */
+.carousel {
+  margin-top: 20px; /* Space between navbar and slider */
+}
+
+.carousel-inner {
+  border-radius: 10px; /* Rounded corners for the slider */
+  overflow: hidden; /* Ensure images don't overflow */
+}
+
+.slider-image {
+  height: 100vh; /*  viewport height for responsive sizing */
+  object-fit: cover; /* Ensures image covers the area  */
+  width: 100%; /* Full width */
+}
+
+/* Custom Slider Text Overlay Styles */
+.carousel-caption {
+  position: absolute;
+  left: 10%; /* Position text on the left */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%);
+  text-align: left; /* Align text to the left */
+  color: #fff; /* White text */
+  max-width: 45%; /* Limit text width for better readability */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for better text visibility */
+  padding: 2rem; /* Add padding for better spacing */
+  border-radius: 10px; /* Rounded corners for the text box */
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffdd57;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  color: #fff; /* White text for paragraph */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better visibility */
+}
+
+.carousel-caption .btn {
+  margin-top: 1.5rem; /* Space between text and button */
+  font-size: 1.2rem;
+  padding: 0.75rem 2rem; /* Button padding */
+  border-radius: 30px; /* Rounded button */
+  background-color: #3498db; /* Blue button */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-caption .btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .carousel-caption {
+    max-width: 80%; /* Increase text width on smaller screens */
+    left: 5%; /* Adjust left position */
+    padding: 1rem; /* Reduce padding */
+  }
+
+  .carousel-caption h1 {
+    font-size: 2rem; /* Smaller heading on mobile */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* Smaller paragraph text on mobile */
+  }
+
+  .carousel-caption .btn {
+    font-size: 1rem; /* Smaller button text on mobile */
+    padding: 0.5rem 1.5rem; /* Smaller button padding */
+  }
+}
+
+/* Welcome Section Styles */
+.welcome-section {
+  padding: 4rem 0; /* Add padding for spacing */
+}
+
+.welcome-section h2 {
+  font-size: 2.5rem; /* Large heading */
+  font-weight: bold;
+  color: #2c3e50; /* Dark blue color */
+  margin-bottom: 1.5rem;
+}
+
+.welcome-section p {
+  font-size: 1.1rem;
+  line-height: 1.8; /* Improve readability */
+  color: #34495e;
+  margin-bottom: 1.5rem;
+}
+
+.welcome-section .btn {
+  font-size: 1.1rem; /* Button text size */
+  padding: 0.75rem 2rem; /* Button padding */
+  border-radius: 30px; /* Rounded button */
+  background-color: #3498db; /* Blue button */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.welcome-section .btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.welcome-section img {
+  border-radius: 10px; /* Rounded corners for the image */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.welcome-section img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .welcome-section h2 {
+    font-size: 2rem; /* Smaller heading on mobile */
+  }
+
+  .welcome-section p {
+    font-size: 1rem; /* Smaller text on mobile */
+  }
+
+  .welcome-section .btn {
+    font-size: 1rem; /* Smaller button text on mobile */
+    padding: 0.5rem 1.5rem; /* Smaller button padding */
+  }
+
+  .welcome-section img {
+    margin-top: 2rem; /* Add space between text and image on mobile */
+  }
+}
+
+/* Our Solutions Section Styles */
+.solution-card {
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-10px); /* Lift card on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.solution-card img {
+  border-top-left-radius: 10px; /* Rounded corners for the top */
+  border-top-right-radius: 10px;
+  height: 200px; /* Fixed height for images */
+  object-fit: cover; /* Ensure images cover the area */
+}
+
+.solution-card .card-body {
+  padding: 1.5rem; /* Add padding for spacing */
+}
+
+.solution-card .card-title {
+  font-size: 1.5rem; /* Heading size */
+  font-weight: bold;
+  color: #2c3e50; /* Dark blue color */
+  margin-bottom: 1rem;
+}
+
+.solution-card .card-text {
+  font-size: 1rem; /* Text size */
+  color: #34495e; /* Slightly lighter text color */
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #2c3e50; /* Dark background */
+  color: #fff; /* White text */
+}
+
+footer h5 {
+  font-size: 1.25rem; /* Heading size */
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+footer p {
+  font-size: 0.9rem; /* Smaller text for description */
+  line-height: 1.6; /* Improve readability */
+  color: #ddd; /* Light gray text */
+}
+
+footer a {
+  color: #fff; /* White links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #3498db; /* Blue color on hover */
+}
+
+footer .list-unstyled li {
+  margin-bottom: 0.75rem; /* Space between list items */
+}
+
+footer .list-unstyled i {
+  width: 20px; /* Icon width */
+  text-align: center; /* Center icons */
+}
+
+footer .fab {
+  font-size: 1.25rem; /* Social media icon size */
+  transition: color 0.3s ease;
+}
+
+footer .fab:hover {
+  color: #3498db; /* Blue color on hover */
+}
+
+/* Placeholder Image Styles */
+.lazy-load {
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lazy-load::before {
+  content: "Loading...";
+  font-size: 1rem;
+  color: #999;
+}
