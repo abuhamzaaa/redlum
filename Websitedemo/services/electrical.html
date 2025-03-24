@@ -1,71 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>Electrical - Red Lum Impex</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<body>
-  <header>
-    <div class="container header-flex">
-      <div class="logo-container">
-        <img src="../images/Screenshot 2025-03-13 151205.png" alt="Redlum Logo" class="logo"/>
-        <h1>RED LUM IMPEX PRIVATE LIMITED</h1>
-      </div>
-
-      <nav>
-        <ul class="nav-links">
-          <li><a href="../index.html">Home</a></li>
-          <li class="services-dropdown active">
-            <a href="#">Services</a>
-            <ul class="dropdown">
-              <li><a href="electrical.html" class="active-sub">Electrical</a></li>
-              <li><a href="sanitary.html">Sanitary</a></li>
-              <li><a href="holidays.html">Holidays</a></li>
-              <li><a href="agro.html">Agro</a></li>
-            </ul>
-          </li>
-          <li><a href="../about.html">About Us</a></li>
-          <li><a href="../contact.html">Contact Us</a></li>
-        </ul>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="../images/Screenshot 2025-03-13 151205.png"
+            alt="Logo"
+            width="100"
+            height="60"
+            class="d-inline-block align-text-top"
+          />
+          Red Lum Impex Pvt
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">AboutUs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Service
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="services/agro.html">Agro</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services/electrical.html"
+                    >Electrical</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services/holidays.html"
+                    >Holidays</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services/sanitary.html"
+                    >Sanitary</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>
-  </header>
+      </div>
+    </nav>
 
-  <main>
-    <div class="container">
-      <h2>Electrical Products</h2>
-      <p>
-        We offer a wide range of electrical products suitable for both
-        residential and commercial needs. Here are 10 featured items:
-      </p>
-      <ul class="item-list">
-        <li>LED Light Bulbs</li>
-        <li>Ceiling Fans</li>
-        <li>Electrical Wiring Cables</li>
-        <li>Modular Switches</li>
-        <li>Smart Home Lighting Systems</li>
-        <li>Power Inverters</li>
-        <li>Solar Panels</li>
-        <li>Extension Boards</li>
-        <li>Electric Water Heaters</li>
-        <li>Surge Protectors</li>
-      </ul>
+    <!-- container............ -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 p-0">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="../images/slider-1.jpg"
+                  class="d-block w-100 slider-image"
+                  alt="Slide 1"
+                />
+                <div class="carousel-caption d-none d-md-block text-left">
+                  <h1 class="display-4">Premium Quality Raw Materials</h1>
+                  <p class="lead">
+                    We use only the finest raw materials to ensure durability
+                    and efficiency in every product.
+                  </p>
+                  <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../images/slider-2.jpg"
+                  class="d-block w-100 slider-image"
+                  alt="Slide 2"
+                />
+                <div class="carousel-caption d-none d-md-block text-left">
+                  <h1 class="display-4">Specialized Manufacturing</h1>
+                  <p class="lead">
+                    Our state-of-the-art manufacturing processes guarantee
+                    precision and reliability.
+                  </p>
+                  <a href="#" class="btn btn-primary btn-lg"
+                    >Explore Products</a
+                  >
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="../images/slider-3.jpg"
+                  class="d-block w-100 slider-image"
+                  alt="Slide 3"
+                />
+                <div class="carousel-caption d-none d-md-block text-left">
+                  <h1 class="display-4">Wide Industry Reach</h1>
+                  <p class="lead">
+                    We distribute durable and efficient conduit pipes across a
+                    wide range of industries.
+                  </p>
+                  <a href="#" class="btn btn-primary btn-lg">Contact Us</a>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Red Lum Impex Pvt. Ltd. All Rights Reserved.</p>
-    </div>
-  </footer>
+    <!-- Hero Section -->
+    <section class="electrical-hero-section">
+      <div class="container text-center">
+        <h1>Electrical Products</h1>
+        <p>
+          We offer a wide range of electrical products suitable for both
+          residential and commercial needs.
+        </p>
+      </div>
+    </section>
 
-  <script src="../scripts.js"></script>
-</body>
+    <!-- Electrical Products Section -->
+    <section class="electrical-products-section py-5">
+      <div class="container">
+        <h2 class="text-center mb-5">Featured Electrical Products</h2>
+        <div class="row">
+          <!-- LED Light Bulbs -->
+          <div class="col-md-4 mb-4">
+            <div class="electrical-card h-100 shadow">
+              <div class="electrical-card-body text-center">
+                <i
+                  class="fas fa-lightbulb fa-3x mb-3 electrical-icon-primary"
+                ></i>
+                <h3 class="electrical-card-title">LED Light Bulbs</h3>
+                <p class="electrical-card-text">
+                  Energy-efficient LED bulbs for bright and sustainable
+                  lighting.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Ceiling Fans -->
+          <div class="col-md-4 mb-4">
+            <div class="electrical-card h-100 shadow">
+              <div class="electrical-card-body text-center">
+                <i class="fas fa-fan fa-3x mb-3 electrical-icon-success"></i>
+                <h3 class="electrical-card-title">Ceiling Fans</h3>
+                <p class="electrical-card-text">
+                  High-performance ceiling fans for optimal air circulation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Electrical Wiring Cables -->
+          <div class="col-md-4 mb-4">
+            <div class="electrical-card h-100 shadow">
+              <div class="electrical-card-body text-center">
+                <i class="fas fa-bolt fa-3x mb-3 electrical-icon-warning"></i>
+                <h3 class="electrical-card-title">Electrical Wiring Cables</h3>
+                <p class="electrical-card-text">
+                  Durable and safe wiring cables for all electrical needs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Modular Switches -->
+          <div class="col-md-4 mb-4">
+            <div class="electrical-card h-100 shadow">
+              <div class="electrical-card-body text-center">
+                <i
+                  class="fas fa-toggle-on fa-3x mb-3 electrical-icon-danger"
+                ></i>
+                <h3 class="electrical-card-title">Modular Switches</h3>
+                <p class="electrical-card-text">
+                  Sleek and reliable modular switches for modern interiors.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Smart Home Lighting Systems -->
+          <div class="col-md-4 mb-4">
+            <div class="electrical-card h-100 shadow">
+              <div class="electrical-card-body text-center">
+                <i class="fas fa-home fa-3x mb-3 electrical-icon-info"></i>
+                <h3 class="electrical-card-title">
+                  Smart Home Lighting Systems
+                </h3>
+                <p class="electrical-card-text">
+                  Advanced lighting systems for smart and automated homes.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Power Inverters -->
+          <div class="col-md-4 mb-4">
+            <div class="electrical-card h-100 shadow">
+              <div class="electrical-card-body text-center">
+                <i
+                  class="fas fa-battery-full fa-3x mb-3 electrical-icon-secondary"
+                ></i>
+                <h3 class="electrical-card-title">Power Inverters</h3>
+                <p class="electrical-card-text">
+                  Reliable power inverters for uninterrupted electricity supply.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Solar Panels -->
+          <div class="col-md-4 mb-4">
+            <div class="electrical-card h-100 shadow">
+              <div class="electrical-card-body text-center">
+                <i
+                  class="fas fa-solar-panel fa-3x mb-3 electrical-icon-success"
+                ></i>
+                <h3 class="electrical-card-title">Solar Panels</h3>
+                <p class="electrical-card-text">
+                  Eco-friendly solar panels for sustainable energy solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Extension Boards -->
+          <div class="col-md-4 mb-4">
+            <div class="electrical-card h-100 shadow">
+              <div class="electrical-card-body text-center">
+                <i class="fas fa-plug fa-3x mb-3 electrical-icon-primary"></i>
+                <h3 class="electrical-card-title">Extension Boards</h3>
+                <p class="electrical-card-text">
+                  High-quality extension boards for multiple device connections.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Electric Water Heaters -->
+          <div class="col-md-4 mb-4">
+            <div class="electrical-card h-100 shadow">
+              <div class="electrical-card-body text-center">
+                <i class="fas fa-water fa-3x mb-3 electrical-icon-info"></i>
+                <h3 class="electrical-card-title">Electric Water Heaters</h3>
+                <p class="electrical-card-text">
+                  Efficient water heaters for instant hot water supply.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Surge Protectors -->
+          <div class="col-md-4 mb-4">
+            <div class="electrical-card h-100 shadow">
+              <div class="electrical-card-body text-center">
+                <i
+                  class="fas fa-shield-alt fa-3x mb-3 electrical-icon-warning"
+                ></i>
+                <h3 class="electrical-card-title">Surge Protectors</h3>
+                <p class="electrical-card-text">
+                  Robust surge protectors to safeguard your electrical devices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Company Logo and Description -->
+          <div class="col-md-4 mb-4">
+            <img
+              src="../images/Screenshot 2025-03-13 151205.png"
+              alt="Red Lum Impex Pvt. Ltd."
+              width="100"
+              class="mb-3"
+            />
+            <p>
+              Red Lum Impex Pvt. Ltd. is a leading provider of high-quality raw
+              materials and specialized manufacturing solutions. We are
+              committed to delivering durable, efficient, and innovative
+              products to industries worldwide.
+            </p>
+          </div>
+          <!-- Useful Links -->
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">Useful Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="text-white text-decoration-none">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">About Us</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none">Services</a>
+              </li>
+              <li>
+                <a href="#" class="text-white text-decoration-none"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Contact Information -->
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-3">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <i class="fas fa-phone-alt me-2"></i>
+                <!-- Font Awesome phone icon -->
+                <a
+                  href="tel:+1234567890"
+                  class="text-white text-decoration-none"
+                  >+123 456 7890</a
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-envelope me-2"></i>
+                <!-- Font Awesome email icon -->
+                <a
+                  href="mailto:info@redlumimpex.com"
+                  class="text-white text-decoration-none"
+                  >info@redlumimpex.com</a
+                >
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-map-marker-alt me-2"></i>
+                <!-- Font Awesome location icon -->
+                <span>123 Industrial Area, City, Country</span>
+              </li>
+            </ul>
+            <!-- Social Media Icons -->
+            <!-- vmegwwi -->
+            <div class="mt-4">
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="text-white me-3"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright Text -->
+        <div class="text-center mt-4">
+          <p class="mb-0">
+            &copy; 2023 Red Lum Impex Pvt. Ltd. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../scripts.js"></script>
+  </body>
 </html>

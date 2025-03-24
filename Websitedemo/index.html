@@ -14,6 +14,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -27,7 +31,7 @@
             height="60"
             class="d-inline-block align-text-top"
           />
-          XYZ Company
+          Red Lum Impex Pvt
         </a>
         <button
           class="navbar-toggler"
@@ -46,7 +50,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">AboutUs</a>
+              <a class="nav-link" href="about.html">AboutUs</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -59,16 +63,29 @@
                 Service
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="services/agro.html">Agro</a>
                 </li>
+                <li>
+                  <a class="dropdown-item" href="services/electrical.html"
+                    >Electrical</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services/holidays.html"
+                    >Holidays</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services/sanitary.html"
+                    >Sanitary</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="contact.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -223,66 +240,95 @@
       </div>
     </div>
     <!-- Our Solutions Section -->
+    <!-- Our Solutions Section -->
     <div class="container my-5">
       <h2 class="text-center display-4 mb-5">Our Solutions</h2>
-      <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow solution-card">
-            <img
-              src="images/card-2.jpg"
-              data-src="images/card-2.jpg"
-              alt="Solution 1"
-              class="card-img-top lazy-load"
-            />
-            <div class="card-body">
-              <h3 class="card-title">High-Quality Raw Materials</h3>
-              <p class="card-text">
-                We provide premium raw materials that ensure durability and
-                efficiency in every product. Our materials are sourced from
-                trusted suppliers and meet international standards.
-              </p>
+      <!-- Swiper Container -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <!-- Card 1 -->
+          <div class="swiper-slide">
+            <div class="card h-100 shadow solution-card">
+              <img
+                src="images/card-2.jpg"
+                data-src="images/card-2.jpg"
+                alt="Solution 1"
+                class="card-img-top lazy-load"
+              />
+              <div class="card-body">
+                <h3 class="card-title">High-Quality Raw Materials</h3>
+                <p class="card-text">
+                  We provide premium raw materials that ensure durability and
+                  efficiency in every product. Our materials are sourced from
+                  trusted suppliers and meet international standards.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="swiper-slide">
+            <div class="card h-100 shadow solution-card">
+              <img
+                src="images/slider-1.jpg"
+                data-src="images/slider-1.jpg"
+                alt="Solution 2"
+                class="card-img-top lazy-load"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Specialized Manufacturing</h3>
+                <p class="card-text">
+                  Our advanced manufacturing processes guarantee precision and
+                  reliability. We use cutting-edge technology to deliver
+                  products that exceed expectation. Lorem ipsum dolor sit amet
+                  consectetur,................................
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="swiper-slide">
+            <div class="card h-100 shadow solution-card">
+              <img
+                src="images/slider-2.jpg"
+                data-src="images/slider-2.jpg"
+                alt="Solution 3"
+                class="card-img-top lazy-load"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Wide Industry Reach</h3>
+                <p class="card-text">
+                  We distribute durable and efficient conduit pipes across a
+                  wide range of industries. Our products are trusted by
+                  businesses worldwide for their quality and performance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards here as needed -->
+          <div class="swiper-slide">
+            <div class="card h-100 shadow solution-card">
+              <img
+                src="images/slider-2.jpg"
+                data-src="images/slider-2.jpg"
+                alt="Solution 3"
+                class="card-img-top lazy-load"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Wide Industry Reach</h3>
+                <p class="card-text">
+                  We distribute durable and efficient conduit pipes across a
+                  wide range of industries. Our products are trusted by
+                  businesses worldwide for their quality and performance.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- Card 2 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow solution-card">
-            <img
-              src="images/slider-1.jpg"
-              data-src="images/slider-1.jpg"
-              alt="Solution 2"
-              class="card-img-top lazy-load"
-            />
-            <div class="card-body">
-              <h3 class="card-title">Specialized Manufacturing</h3>
-              <p class="card-text">
-                Our advanced manufacturing processes guarantee precision and
-                reliability. We use cutting-edge technology to deliver products
-                that exceed expectations.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-md-4 mb-4">
-          <div class="card h-100 shadow solution-card">
-            <img
-              src="images/slider-2.jpg"
-              data-src="images/slider-2.jpg"
-              alt="Solution 3"
-              class="card-img-top lazy-load"
-            />
-            <div class="card-body">
-              <h3 class="card-title">Wide Industry Reach</h3>
-              <p class="card-text">
-                We distribute durable and efficient conduit pipes across a wide
-                range of industries. Our products are trusted by businesses
-                worldwide for their quality and performance.
-              </p>
-            </div>
-          </div>
-        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation Buttons -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </div>
 
@@ -385,6 +431,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts.js"></script>
   </body>
 </html>

@@ -37,3 +37,27 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(img);
   });
 });
+
+// Initialize Swiper
+const swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1, // Show 1 slide by default
+  spaceBetween: 20, // Space between slides
+  loop: true, // Infinite loop
+  pagination: {
+    el: ".swiper-pagination", // Pagination dots
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next", // Next button
+    prevEl: ".swiper-button-prev", // Previous button
+  },
+  breakpoints: {
+    // Responsive breakpoints
+    768: {
+      slidesPerView: 2, // Show 2 slides on tablets
+    },
+    992: {
+      slidesPerView: 3, // Show 3 slides on desktops
+    },
+  },
+});
